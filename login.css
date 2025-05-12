@@ -1,0 +1,202 @@
+/*Preferencias y fondo*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    overflow-x: hidden; /* Elimina scroll horizontal */
+    overflow-y: hidden; /* Elimina scroll vertical */
+}
+
+body{
+    background-image: url(img/neon-tropical-monstera-leaf-banner.jpg);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    box-sizing: border-box;
+}
+
+/*Sitio del logo*/
+
+.nugu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 0;
+}
+
+#logo-nugu{
+    position: relative;
+}
+
+.titulo{
+    color: #000;
+    text-shadow: 0px 0px 5px #fff;
+    position: absolute;
+    bottom: 100px
+}
+
+/*Caja principal*/
+
+.box{
+    color: #fff;
+    width: 50vw;
+    height: 60vh;
+    background-color: #000;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 30px;
+}
+
+/*contenido de la caja Principal*/
+/*Contenedor de imagenes*/
+
+.box-image{
+    width: 37vw;
+    height: 50vh;
+    position: relative;
+}
+
+.marcoFoto{
+    position: absolute;
+    width: 100px;
+    height: 120px;
+    left: 15px;
+}
+
+.marco1{
+    z-index: 4;
+    top: 80px;
+    left: 110px;
+    transform: rotate(-10deg)
+}
+.marco2{
+    top: 0px;
+    left: 130px;
+    z-index: 1;
+    transform: rotate(20deg)
+}
+.marco3{
+    left: 40px;
+    top: 80px;
+    z-index: 3;
+    transform: rotate(-25deg)
+}
+.marco4{
+    bottom: 75px;
+    z-index: 3;
+    left: 190px;
+    transform: rotate(20deg)
+}
+.marco5{
+    z-index: 1;
+    left: 40px;
+    top: 10px;
+    z-index: 2;
+    transform: rotate(-25deg)
+}
+
+.Invitacion{
+    position: absolute;
+    left: 15px;
+    bottom: 10px;
+}
+
+/*contenedor del Formulario*/
+
+.box-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    height: 50vh;
+}
+
+.sesion{
+    margin-bottom: 10px;
+}
+
+.form-input {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#Nombre,
+#Passwork, 
+#Enviar {
+    width: 70%;
+    box-sizing: border-box;
+    padding: 9px 8px;
+    border: none #777;
+    box-shadow: 0px 0px 5px #0003;
+    border: 1px solid #777;
+    background-color: transparent;
+    color: #eee;
+    border-radius: 10px;
+    margin-top:10px ;
+}
+.Olvido{
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+
+.SingIn{
+    margin-top: 20px;
+}
+
+label{
+    font-size: 20px;
+}
+
+
+
+/*Deepseek*/
+
+/* Añade estas reglas a tu CSS existente */
+
+/* Animación para todos los elementos principales */
+
+
+
+.nugu, .box {
+    opacity: 0;
+    transform: translateY(50px);
+    animation: slideUp 0.8s ease-out forwards;
+}
+
+.nugu, .box {
+    opacity: 0;
+    transform: translateY(20px); /* Reducimos la distancia inicial */
+    animation: slideUp 0.8s ease-out forwards;
+    will-change: transform, opacity; /* Optimización para animaciones */
+}
+
+@keyframes slideUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.box {
+    animation-delay: 0.3s;
+}
