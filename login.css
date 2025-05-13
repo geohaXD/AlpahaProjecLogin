@@ -50,7 +50,7 @@ body{
 
 /*Caja principal*/
 
-.box-login{
+#box-login{
     color: #fff;
     width: 50vw;
     height: 60vh;
@@ -176,7 +176,7 @@ label{
 /* Animación para todos los elementos principales */
 
 
-.nugu, .box-login {
+.nugu, #box-login {
     opacity: 0;
     transform: translateY(20px); /* Reducimos la distancia inicial */
     animation: slideUp 0.8s ease-out forwards;
@@ -190,17 +190,23 @@ label{
     }
 }
 
-.box-login {
+#box-login {
     animation-delay: 0.3s;
 }
 
+
+
+#Nuevo{
+    color: #5a1f84;
+    cursor: pointer;
+}
 
 /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 
 
 /*Sesion de crear sesion*/
 
-.box-signin{
+#box-signin{
     color: #fff;
     width: 50vw;
     height: 60vh;
@@ -410,6 +416,8 @@ label{
     border-bottom-left-radius: 25px;
     background-color: #5a1f84;
     border: none;
+    /* background-color: transparent;
+    border: 1px solid #fff; */
     color: #fff;
 }
 
@@ -420,7 +428,7 @@ label{
 /* Animación para todos los elementos principales */
 
 
-.nugu, .box-signin {
+.nugu, #box-signin {
     opacity: 0;
     transform: translateY(20px); /* Reducimos la distancia inicial */
     animation: slideUp 0.8s ease-out forwards;
@@ -434,6 +442,11 @@ label{
     }
 }
 
-.box-signin {
+#box-signin {
     animation-delay: 0.3s;
+}
+
+#Entrar{
+    color: #5a1f84;
+    cursor: pointer;
 }
