@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,12 +8,13 @@
     <link rel="stylesheet" href="login.css">
     <title>Login AlfaProjecj</title>
 </head>
+
 <body>
     <div class="nugu">
         <img src="img/Etna_Sans_Serif__3_-removebg-preview.png" alt="logo nugu" id="logo-nugu">
         <h1 class="titulo">Estas de vuelta! </h1>
     </div>
-    <div class="box">
+    <div class="box-login" style="display: none;">
         <div class="box-image">
             <img src="img/recursos/1.png" alt="marco de foto" class="marcoFoto marco1">
             <img src="img/recursos/2.png" alt="marco de foto" class="marcoFoto marco2">
@@ -29,10 +31,74 @@
                 <input type="submit" id="Enviar" value="Iniciar">
                 <a class="Olvido" href="">Olvidaste la contraseña</a>
             </div>
-            <p style="text-align: center;" class="SingIn">Aun no tienes una cuenta creada?<br><a href=""> Crear cuenta</a></p>
-            
+            <p style="text-align: center;" class="SingIn">Aun no tienes una cuenta creada?<br><a href=""> Crear
+                    cuenta</a></p>
+
         </div>
+    </div>
+    <div class="box-signin">
+        <h2 class="sesion">Crea una cuenta</h2>
+        <div class="formulario-Creacion">
+            <div class="form-fullname">
+                <label for="" class="nombre">Nombre
+                    <input type="text" id="nombre" placeholder="Jhon">
+                </label>
+                <label for="" class="apellido">Apellido
+                    <input type="text" id="apellido" placeholder="Doe">
+                </label>
+            </div>
+            <div class="form-Information">
+                <label for="" class="fecha"> Fecha N.
+                    <input type="date" id="fecha" placeholder="fecha">
+                </label>
+                <label for="" class="idioma">Idioma
+                    <select name="Idioma" id="idioma">
+                        <option value="espnol">Español</option>
+                        <option value="ingles">English</option>
+                    </select>
+                </label>
+                <fieldset>
+                    <legend class="Genero">Genero</legend>
+                    <label class="generoLabel" for="Masculino">Masculino
+                        <input clas="genero" type="checkbox" id="Masculino" value="Masculino">
+                    </label>
+                    <label class="generoLabel" for="Femenino">Femenino
+                        <input clas="genero" type="checkbox" id="Femenino" value="Femenino">
+                    </label>
+                </fieldset>
+            </div>
+            <div class="form-login">
+                <label for="" class="email  ">Correo
+                    <input type="email" id="email" placeholder="Example@mail.com">
+                </label>
+                <label for="" class="password">Contraseña
+                    <input type="password" id="password" placeholder="********">
+                </label>
+                <label for="" class="password">Confirmar con.
+                    <input type="password" id="password" placeholder="********">
+                </label>
+            </div>
+            <div class="form-validation">
+                <div class="box-Codigo">
+                    <div class="text-codigo">
+                        <label for="">Codigo
+                            <input type="text" id="validacion" placeholder=" Codigo del Correo">
+                        </label>
+                    </div>
+                    <div class="send-codigo">
+                        <input type="submit" id="confirmacion-validacion">
+                    </div>
+                </div>
+                <div class="box-termino">
+                    <p class="termino">Terminos y condiciones <a href="">Aqui</a></p>
+                    <input id="confirmacion-termino" type="checkbox">
+                    <p class="iniciar-Sesion" style="text-align: center;">Ya tienes una cuenta creada?<br> <b id="Entrar">Inicia</b></p>
+                </div>
+            </div>
+        </div>
+        <input type="submit" value="Crear" class="Crear">
     </div>
     <script src="login.js"></script>
 </body>
+
 </html>
