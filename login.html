@@ -14,7 +14,8 @@
         <img src="img/Etna_Sans_Serif__3_-removebg-preview.png" alt="logo nugu" id="logo-nugu">
         <h1 class="titulo">Estas de vuelta! </h1>
     </div>
-    <div id="box-login">
+    <div id="box-login" style="display: none;">
+        <img src="img/Etna_Sans_Serif__3_-recalculado.png" alt="imagen" id="img-movile">
         <div class="box-image">
             <img src="img/recursos/1.png" alt="marco de foto" class="marcoFoto marco1">
             <img src="img/recursos/2.png" alt="marco de foto" class="marcoFoto marco2">
@@ -36,7 +37,7 @@
 
         </div>
     </div>
-    <div id="box-signin" style="display: none;">
+    <div id="box-signin">
         <h2 class="sesion">Crea una cuenta</h2>
         <div class="formulario-Creacion">
             <div class="form-fullname">
@@ -46,6 +47,9 @@
                 <label for="" class="apellido">Apellido
                     <input type="text" id="apellido" placeholder="Doe">
                 </label>
+                <div class="botom-formulario" style="display: none;">
+                    <input type="submit" value="siguiente" id="botom-siguiente-informacion">
+                </div>
             </div>
             <div class="form-Information">
                 <label for="" class="fecha"> Fecha N.
@@ -66,6 +70,10 @@
                         <input clas="genero" type="checkbox" id="Femenino" value="Femenino">
                     </label>
                 </fieldset>
+                <div class="botom-formulario" style="display: none;">
+                    <input type="submit" value="atras" id="botom-atras-fullname">
+                    <input type="submit" value="siguiente" id="botom-siguiente-login">
+                </div>
             </div>
             <div class="form-login">
                 <label for="" class="email  ">Correo
@@ -77,6 +85,10 @@
                 <label for="" class="password">Confirmar con.
                     <input type="password" id="password" placeholder="********">
                 </label>
+                <div class="botom-formulario botom-login" style="display: none;">
+                    <input type="submit" value="atras" class="botom-atras-informacion">
+                    <input type="submit" value="siguiente" class="botom-siguiente-validation">
+                </div>
             </div>
             <div class="form-validation">
                 <div class="box-Codigo">
@@ -93,10 +105,15 @@
                     <p class="termino">Terminos y condiciones <a href="">Aqui</a></p>
                     <input id="confirmacion-termino" type="checkbox">
                     <p class="iniciar-Sesion" style="text-align: center;">Ya tienes una cuenta creada?<br> <b id="Entrar">Inicia</b></p>
+                    
+                </div>
+                <div class="botom-formulario formulario-confirmacion" style="display: none;">
+                    <input type="submit" value="atras" class="botom-atras botom-atras-login">
                 </div>
             </div>
+            <p class="iniciar-Sesion Entrar-secondario" style="text-align: center; display: none;">Ya tienes una cuenta creada?<br> <b id="Entrar-secondario">Inicia</b></p>
+            <input type="submit" value="Crear" class="Crear">
         </div>
-        <input type="submit" value="Crear" class="Crear">
     </div>
     <script src="login.js"></script>
 </body>

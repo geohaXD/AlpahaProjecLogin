@@ -1,17 +1,20 @@
 /*Preferencias y fondo*/
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html, body {
-    overflow-x: hidden; /* Elimina scroll horizontal */
-    overflow-y: hidden; /* Elimina scroll vertical */
+html,
+body {
+    overflow-x: hidden;
+    /* Elimina scroll horizontal */
+    overflow-y: hidden;
+    /* Elimina scroll vertical */
 }
 
-body{
+body {
     background-image: url(img/neon-tropical-monstera-leaf-banner.jpg);
     font-family: Georgia, 'Times New Roman', Times, serif;
     display: flex;
@@ -24,11 +27,14 @@ body{
     background-position: center center;
     background-size: cover;
     box-sizing: border-box;
+    container-name: cuerpo;
+    container-type: size;
+
 }
 
 /*Sitio del logo*/
 
-.nugu{
+.nugu {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -37,11 +43,11 @@ body{
     top: 0;
 }
 
-#logo-nugu{
+#logo-nugu {
     position: relative;
 }
 
-.titulo{
+.titulo {
     color: #000;
     text-shadow: 0px 0px 5px #fff;
     position: absolute;
@@ -50,7 +56,7 @@ body{
 
 /*Caja principal*/
 
-#box-login{
+#box-login {
     color: #fff;
     width: 50vw;
     height: 60vh;
@@ -65,44 +71,52 @@ body{
 /*contenido de la caja Principal*/
 /*Contenedor de imagenes*/
 
-.box-image{
+.box-image {
     width: 37vw;
     height: 50vh;
     position: relative;
 }
 
-.marcoFoto{
+#img-movile {
+    display: none;
+}
+
+.marcoFoto {
     position: absolute;
     width: 100px;
     height: 120px;
     left: 15px;
 }
 
-.marco1{
+.marco1 {
     z-index: 4;
     top: 80px;
     left: 110px;
     transform: rotate(-10deg)
 }
-.marco2{
+
+.marco2 {
     top: 0px;
     left: 130px;
     z-index: 1;
     transform: rotate(20deg)
 }
-.marco3{
+
+.marco3 {
     left: 40px;
     top: 80px;
     z-index: 3;
     transform: rotate(-25deg)
 }
-.marco4{
+
+.marco4 {
     bottom: 75px;
     z-index: 3;
     left: 190px;
     transform: rotate(20deg)
 }
-.marco5{
+
+.marco5 {
     z-index: 1;
     left: 40px;
     top: 10px;
@@ -110,7 +124,7 @@ body{
     transform: rotate(-25deg)
 }
 
-.Invitacion{
+.Invitacion {
     position: absolute;
     left: 15px;
     bottom: 10px;
@@ -118,7 +132,7 @@ body{
 
 /*contenedor del Formulario*/
 
-.box-form{
+.box-form {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -127,7 +141,7 @@ body{
     height: 50vh;
 }
 
-.sesion{
+.sesion {
     margin-bottom: 10px;
 }
 
@@ -140,7 +154,7 @@ body{
 }
 
 #Nombre,
-#Passwork, 
+#Passwork,
 #Enviar {
     width: 70%;
     box-sizing: border-box;
@@ -151,19 +165,20 @@ body{
     background-color: transparent;
     color: #eee;
     border-radius: 10px;
-    margin-top:10px ;
+    margin-top: 10px;
 }
-.Olvido{
+
+.Olvido {
     font-size: 12px;
     margin-top: 10px;
 }
 
 
-.SingIn{
+.SingIn {
     margin-top: 20px;
 }
 
-label{
+label {
     font-size: 20px;
 }
 
@@ -176,11 +191,14 @@ label{
 /* Animación para todos los elementos principales */
 
 
-.nugu, #box-login {
+.nugu,
+#box-login {
     opacity: 0;
-    transform: translateY(20px); /* Reducimos la distancia inicial */
+    transform: translateY(20px);
+    /* Reducimos la distancia inicial */
     animation: slideUp 0.8s ease-out forwards;
-    will-change: transform, opacity; /* Optimización para animaciones */
+    will-change: transform, opacity;
+    /* Optimización para animaciones */
 }
 
 @keyframes slideUp {
@@ -196,7 +214,7 @@ label{
 
 
 
-#Nuevo{
+#Nuevo {
     color: #5a1f84;
     cursor: pointer;
 }
@@ -206,7 +224,7 @@ label{
 
 /*Sesion de crear sesion*/
 
-#box-signin{
+#box-signin {
     color: #fff;
     width: 50vw;
     height: 60vh;
@@ -217,7 +235,7 @@ label{
     border-radius: 30px;
 }
 
-.sesion{
+.sesion {
     padding-left: 20px;
     padding-top: 20px;
 
@@ -225,7 +243,8 @@ label{
 
 .formulario-Creacion {
     width: 100%;
-    height: 70vh; /* Usa unidades relativas (vh) */
+    height: 70vh;
+    /* Usa unidades relativas (vh) */
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -238,9 +257,13 @@ label{
     justify-content: space-around;
 }
 
-.nombre, .apellido{
-    width: 45%;}
-#nombre, #apellido{
+.nombre,
+.apellido {
+    width: 45%;
+}
+
+#nombre,
+#apellido {
     width: 100%;
     box-sizing: border-box;
     padding: 9px 8px;
@@ -261,7 +284,7 @@ label{
 
 .fecha,
 .idioma,
-.Genero{
+.Genero {
     width: 25%;
     box-shadow: 0px 0px 5px #0003;
     height: 100%;
@@ -269,8 +292,7 @@ label{
 }
 
 #fecha,
-#idioma
-{
+#idioma {
     border: 1px solid #777;
     border-radius: 10px;
     height: 60%;
@@ -281,20 +303,20 @@ label{
     font-family: sans-serif;
 }
 
-select option{
-    border-top-right-radius:0 ;
-    border-top-left-radius:0 ;
+select option {
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
     background-color: #000;
     color: #eee;
 }
 
-.generoLabel{
+.generoLabel {
     font-size: 15px;
     margin: 10px;
 
 }
 
-fieldset{
+fieldset {
     padding: 10px;
 }
 
@@ -304,26 +326,29 @@ fieldset{
     justify-content: space-around;
 }
 
-.email{
+.email {
     margin-left: 10px;
 }
-.password{
+
+.password {
     margin-right: 10px;
 }
+
 .email,
-.password{
+.password {
     width: 30%;
     height: 100%;
     font-size: 15px;
 }
+
 #email,
-#password{
+#password {
     width: 100%;
     height: 67%;
     box-sizing: border-box;
     box-shadow: 0px 0px 5px #0003;
     background-color: transparent;
-    padding: 9px 8px; 
+    padding: 9px 8px;
     border: 1px solid #777;
     color: #eee;
     border-radius: 10px;
@@ -337,44 +362,45 @@ fieldset{
 }
 
 .box-Codigo,
-.box-termino{
+.box-termino {
     width: 50%;
     height: 100%;
     font-size: 15px;
 }
 
 
-#validacion{
+#validacion {
     width: 100%;
     height: 50%;
     background-color: transparent;
     border: 1px solid #777;
     border-radius: 10px;
-    
+
 }
 
-.box-Codigo{
+.box-Codigo {
     margin: 15px;
     display: flex;
     align-items: center;
     width: 35%;
 }
-.text-codigo{
+
+.text-codigo {
     width: 60%;
     height: 100%;
     margin: 5px;
 }
 
-.send-codigo{
+.send-codigo {
     width: 20%;
     height: 100%;
     position: relative;
     margin: 5px;
-    
+
 }
 
 
-#confirmacion-validacion{
+#confirmacion-validacion {
     width: 100%;
     height: 50%;
     background-color: transparent;
@@ -385,11 +411,11 @@ fieldset{
     bottom: 20px;
 }
 
-label{
+label {
     font-size: 15px;
 }
 
-.box-termino{
+.box-termino {
     width: 65%;
     display: flex;
     justify-content: start;
@@ -397,18 +423,18 @@ label{
 }
 
 .termino,
-.iniciar-Sesion{
+.iniciar-Sesion {
     font-size: 14px;
 }
 
 
-#confirmacion-termino{
+#confirmacion-termino {
     height: 18px;
     margin: 10px;
     margin-right: 30px;
 }
 
-.Crear{
+.Crear {
     width: 100%;
     height: 15%;
     align-self: center;
@@ -428,11 +454,14 @@ label{
 /* Animación para todos los elementos principales */
 
 
-.nugu, #box-signin {
+.nugu,
+#box-signin {
     opacity: 0;
-    transform: translateY(20px); /* Reducimos la distancia inicial */
+    transform: translateY(20px);
+    /* Reducimos la distancia inicial */
     animation: slideUp 0.8s ease-out forwards;
-    will-change: transform, opacity; /* Optimización para animaciones */
+    will-change: transform, opacity;
+    /* Optimización para animaciones */
 }
 
 @keyframes slideUp {
@@ -446,7 +475,295 @@ label{
     animation-delay: 0.3s;
 }
 
-#Entrar{
+#Entrar {
     color: #5a1f84;
     cursor: pointer;
 }
+
+/*Contenedores de portafolio*/
+
+@container cuerpo (max-width: 81.25rem) {
+    .nugu {
+        display: none;
+    }
+
+    .box-image {
+        display: none;
+    }
+
+    #box-login {
+        width: 80%;
+        max-width: 700px;
+    }
+
+    #img-movile {
+        width: 120px;
+        height: auto;
+        display: flex;
+        align-self: self-start;
+        position: absolute;
+        left: 0;
+        top: 0;
+        margin: 20px;
+    }
+
+    .box-form {
+        flex-grow: 4;
+    }
+}
+
+@container cuerpo (max-width: 35rem) {
+
+    .box-image {
+        display: none;
+    }
+
+    #box-login {
+        width: 80%;
+        max-width: 56.25rem
+    }
+
+    #img-movile {
+        width: 100px;
+        height: auto;
+        position: absolute;
+        margin: 15px;
+    }
+}
+
+@container cuerpo (max-width: 32rem) {
+    #img-movile {
+        display: none;
+    }
+}
+
+
+/* adactacion para moviles crear cuenta */
+
+@container cuerpo (max-width: 81.25rem) {
+
+    #box-signin {
+        width: 80%;
+        max-width: 700px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .botom-formulario {
+        display: flex !important;
+        justify-content: space-around;
+    }
+
+    .form-fullname {
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 60%;
+    }
+
+    .nombre,
+    .apellido,
+    .botom-formulario {
+        width: 80%;
+        height: 100%;
+        box-sizing: border-box;
+        margin-top: 0;
+    }
+
+    #botom-siguiente-informacion {
+        width: 100%;
+        height: 50%;
+        background-color: transparent;
+        color: #eee;
+        border: 1px solid #eee;
+        border-radius: 10px;
+        padding: 5px;
+    }
+
+    .form-Information {
+        display: none;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        height: 70%;
+        flex-grow: 2;
+        margin: 10px;
+    }
+
+    .fecha,
+    .idioma {
+        width: 70%;
+        height: 100%;
+        margin: 10px;
+        margin-left: 8%;
+    }
+
+    fieldset {
+        margin: 10px;
+        width: 65%;
+        height: 20px;
+        padding: 30px;
+    }
+
+    .Genero {
+        padding: 0;
+        width: auto;
+    }
+
+    .generoLabel {
+        margin: 5px;
+    }
+
+    #botom-siguiente-login,
+    #botom-atras-fullname {
+        height: 30px;
+        width: 30%;
+        background-color: transparent;
+        color: #eee;
+        border: 1px solid #eee;
+        border-radius: 5px;
+        padding: 5px;
+    }
+
+    .form-login {
+        width: 100%;
+        height: 90%;
+        display: none;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        flex-grow: 2;
+    }
+
+    .email {
+        margin-left: 0px;
+    }
+
+    .password {
+        margin-right: 10px;
+    }
+
+
+    .email,
+    .password,
+    .botom-login {
+        width: 90%;
+        height: 13%;
+        font-size: 15px;
+    }
+
+    .botom-atras-informacion,
+    .botom-siguiente-validation {
+        height: 30px;
+        width: 30%;
+        background-color: transparent;
+        color: #eee;
+        border: 1px solid #eee;
+        border-radius: 5px;
+        padding: 5px;
+    }
+
+    #email,
+    #password {
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+        box-shadow: 0px 0px 5px #0003;
+        background-color: transparent;
+        padding: 9px 8px;
+        border: 1px solid #777;
+        color: #eee;
+        border-radius: 10px;
+    }
+
+    .form-validation {
+        display: flex;
+        flex-grow: 3;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .box-Codigo {
+        width: 90%;
+    }
+
+    .box-Codigo,
+    .box-termino,
+    .formulario-confirmacion {
+        height: 20%;
+    }
+
+
+    .send-codigo {
+        width: 20%;
+        height: 100%;
+        position: relative;
+        margin: 5px;
+    }
+
+    .text-codigo {
+        position: relative;
+        margin: 5px;
+        width: 60%;
+    }
+
+    .text-codigo label {
+        position: absolute;
+        height: 80%;
+        top: 0;
+        width: 100%;
+
+
+    }
+
+    #validacion {
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        top: 0;
+    }
+
+    #confirmacion-validacion {
+        display: inline-block;
+        width: 100%;
+        height: 75%;
+        ;
+        position: absolute;
+        bottom: 0;
+    }
+
+    .botom-atras-login {
+        width: 100%;
+        height: 80%;
+        background-color: transparent;
+        color: #eee;
+        border: 1px solid #eee;
+        border-radius: 5px;
+        padding: 5px;
+    }
+
+    .box-termino {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    .iniciar-Sesion {
+        margin: 10px;
+        display: none;
+    }
+
+    .Entrar-secondario {
+        display: block;
+    }
+
+}
+
+@container cuerpo (max-width: 35rem) {}
+
+@container cuerpo (max-width: 32rem) {}
